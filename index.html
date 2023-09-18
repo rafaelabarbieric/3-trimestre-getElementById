@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Calculadora de IMC</title>
 </head>
      <script>
         
@@ -40,7 +40,7 @@
             else if (somaClass > 34.9 && somaClass <= 39.9) {
                 document.getElementById("class").value = "Obesidade grau 2"
             }
-            else {
+            else if (somaClass >= 40){
                 document.getElementById("class").value = "Obesidade extrema"
             }
         }
@@ -56,24 +56,24 @@
     <h1>Calculadora de IMC</h1>
     <form>
         <div>
-            <label for="">Massa</label>
+            <label for="">Massa:</label>
             <input type="number" name="" id="massa">
         </div>
         <div>
-            <label for="">Altura</label>
+            <label for="">Altura:</label>
             <input type="number" name="" id="altura">
         </div>
         <div>
-            <label for="">IMC</label>
+            <label for="">IMC:</label>
             <input type="number" name="" id="imc" disabled>
         </div>
         <div>
-            <label for="">Classificação</label>
+            <label for="">Classificação:</label>
             <input type="text" name="" id="class" disabled>
         </div>
         <div>
-            <input type="button" value="Calcular" onclick="click_calcular();">
-            <input type="button" value="Limpar" onclick="click_limpar()">
+            <input id="calcular" type="button" value="Calcular" onclick="click_calcular();">
+            <input id="limpar" type="button" value="Limpar" onclick="click_limpar()">
         </div>
     </form>
 
