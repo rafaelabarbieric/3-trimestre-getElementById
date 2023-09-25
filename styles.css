@@ -5,11 +5,12 @@ h1{
 }
 form{
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid #272559;
     border-radius: 5px;
     margin-left: 600px;
     margin-right: 600px;
     background-color: #CBCDF2;
+    color: #272559;
 }
 div{
     margin: 10px;
